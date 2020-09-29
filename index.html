@@ -8,6 +8,53 @@
     <title>The story of the Chinese Farmer</title>
 
     <style>
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 
         p{
             font-family: sans-serif;
@@ -27,6 +74,7 @@
             max-width: 90%;
             margin: auto;
             background: -webkit-linear-gradient(90deg, rgb(233, 200, 128), rgb(13, 90, 167));
+            font-family: 'Open Sans', sans-serif;
             /*background-image:url(data:image/jpeg;base64,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);
             background-repeat: no-repeat;
             background-position: top right;*/
@@ -41,8 +89,50 @@
             padding-left: 30px;
             margin-top:80px;
             margin-bottom: 80px;
+            font-style: italic;
           }
 
+          .villagers{
+              border-left: 3px solid indianred;
+            }
+
+        .farmer{
+            border-left: 3px solid greenyellow;
+        }
+
+        header > h1{
+            background-color: yellow;
+        }
+
+        .good,.bad {
+            font-variant: small-caps;
+        }
+
+        .bad{
+            color:red;
+        }
+
+        .good{
+            color: green;
+        }
+
+        .trwhite{
+            background-color: white;
+        }
+
+        .trgrey{
+            background-color: grey;
+        }
+
+        #firstp{
+            font-weight:bold;
+        }
+
+        img{
+            float:left;
+            margin-right: 20px;
+        }
+     
         </style>
 
 </head>
@@ -52,7 +142,7 @@
 <header>
     <h1>The Story of the Chinese Farmer</h1>
 
-    <figcaption>11 may 2016, Alexandre Gorius</figcaption>
+    <h5>11 may 2016, Alexandre Gorius</h5>
 
 
 <img src="https://cdn-images-1.medium.com/max/1000/1*2PCmLZyzQaF2pyKYkSTFpA.jpeg" alt="Picture of Alexandre Gorius" style="width:400px">
@@ -74,22 +164,22 @@
 <main>
 <a href="https://github.com/becodeorg/Startup-Brussels-Johnson-5.25/blob/master/1.The-Field/02.HTML-CSS/1.fundamentals/images/doc-the-chinese-farmer.txt" target="_blank" title="Check out the story on github"><h2>The story</h2></a>
 
-<p>Once upon a time there was a Chinese farmer whose horse ran away. That evening, all of his neighbors came around to commiserate. They said</p>
-<q>We are so sorry to hear your horse has run away. This is most unfortunate.</q> 
+<p id="firstp">Once upon a time there was a Chinese farmer whose horse ran away. That evening, all of his neighbors came around to commiserate. They said</p>
+<q class="villagers">We are so sorry to hear your horse has run away. This is most unfortunate.</q> 
 <p>The farmer said,</p>
-<q><em>Maybe.</em></q> 
+<q class="farmer"><em>Maybe.</em></q> 
 <p>The next day the horse came back bringing seven wild horses with it, and in the evening everybody came back and said,</p>
-<q>Oh, isn’t that lucky. What a great turn of events. You now have eight horses!</q>
+<q class="villagers">Oh, isn’t that lucky. What a great turn of events. You now have eight horses!</q>
 <p>The farmer again said, </p>
-<q><em>Maybe.</em></q> 
+<q class="farmer"><em>Maybe.</em></q> 
 <p>The following day his son tried to break one of the horses, and while riding it, he was thrown and broke his leg. The neighbors then said,</p>
-<q>Oh dear, that’s too bad,</q></p>
+<q class="villagers">Oh dear, that’s too bad,</q>
 <p>and the farmer responded,</p>
-<q><em>Maybe.</em></q>
+<q class="farmer"><em>Maybe.</em></q>
 <p>The next day the conscription officers came around to conscript people into the army, and they rejected his son because he had a broken leg. Again all the neighbors came around and said,</p>
-<q>“Isn’t that great!”</q>
+<q class="villagers">“Isn’t that great!”</q>
 <p>Again, he said,</p>
-<q><em>Maybe.</em></q>
+<q class="farmer"><em>Maybe.</em></q>
 
 <p>The whole process of nature is an integrated process of immense complexity, and it’s really impossible to tell whether anything that happens in it is <dfn class="good">good</dfn> or <dfn class="bad">bad</dfn> — because you never know what will be the consequence of the misfortune; or, you never know what will be the consequences of <dfn class="good">good</dfn> fortune.</p>
 
@@ -104,32 +194,35 @@
 <h4>Here is this dialog in the form of a table</h4>
 
 <table>
-    <tr>
+
+    <caption>Table representing the farmer's philosophy.</caption>
+
+    <tr class="trwhite">
     <th>Event</th>
-    <th><dfn class="good">Good or <dfn class="bad">Bad?</dfn></th>
+    <th><dfn class="good">Good</dfn> or <dfn class="bad">Bad?</dfn></th>
     </tr>
-    <tr>
+    <tr class="trgrey">
     <td>Lose a horse</td>   
     <td>Maybe</td>
     </tr>
-    <tr>
+    <tr class="trwhite">
         <td>Win more horses</td>
         <td>Maybe </td>
     </tr>
 
-    <tr>
+    <tr class="trgrey">
         <td>Son injury</td>
         <td>Maybe</td>
     </tr>
 
-    <tr>
+    <tr class="trwhite">
         <td>Avoid war </td>
         <td>Maybe</td>
     </tr>
 
 </table>
 
-  <caption>Table representing the farmer's philosophy.</caption>
+ 
 
 </section>
 
